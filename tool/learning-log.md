@@ -1,13 +1,16 @@
 # Tool Learning Log
 
-## Tool: **X**
+## Tool: **Kaboom**
 
-## Project: **X**
+## Project: **Pixel Game (still planning)**
 
 ---
 
-### X/X/XX:
-* Text
+### 10/30/2024:
+* I decided to dig deep into Kaboom since I didn't do that well of a research
+  * I looked into the official website first
+  * I first went into the playground and looked at some examples. I went into some sort of code where a sprite can move
+  * I looked through examples. (I couldn't really find a way to tinker on jsbin because I need an image and I don't have one.)
 
 ### X/X/XX:
 * Text
