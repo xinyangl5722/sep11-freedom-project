@@ -12,8 +12,13 @@
   * I first went into the playground and looked at some examples. I went into some sort of code where a sprite can move
   * I looked through examples. (I couldn't really find a way to tinker on jsbin because I need an image and I don't have one.)
 
-### X/X/XX:
-* Text
+### 10/18/2024:
+* I first created a whole directory dedicate to tinkering my tool
+* I decidded to learn how to get kaboom into my IDE
+ * I went to the tutorial section of the official website
+ * I first learned how to get the CDN into my IDE
+ * I copied the CDN into my html
+  * Now it's a grey and white checkered background
 
 
 <!-- 
