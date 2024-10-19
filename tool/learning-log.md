@@ -20,6 +20,18 @@
  * I copied the CDN into my html
   * Now it's a grey and white checkered background
 
+### 10/19/2024:
+* I learned how to put a sprite inside my testing code.
+ * I first grabbed a random transparent png photo and then put it in the directory
+ * Then I added my sprite into my code
+ ```js
+const player = add([
+	sprite("ghost"),   // sprite() component makes it render as a sprite
+ pos(120, 80),     // pos() component gives it position, also enables movement
+])
+```
+ * But when I looked at my sprite, it was too big and I don't really know how to make it smaller
+
 
 <!-- 
 * Links you used today (websites, videos, etc)
