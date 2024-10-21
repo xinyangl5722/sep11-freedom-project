@@ -32,6 +32,27 @@ const player = add([
 ```
 * But when I looked at my sprite, it was too big
 
+### 10/21/2024
+* I learned how to move my sprites. i decided to use a different sprite which was the default green bean
+	* I went to the playground first because the component tutorials are confusing
+	* I saw the code on how they moved it so I put the codes for both arrows into my code so it kind of looks a lot like this.
+```js
+onKeyDown("left", () => {
+	player.move(-SPEED, 0)
+})
+onKeyDown("right", () => {
+	player.move(SPEED, 0)
+})
+onKeyDown("up", () => {
+	player.move(0, -SPEED)
+})
+onKeyDown("down", () => {
+	player.move(0, SPEED)
+})
+```
+* So basically, if the left and right arrows are pressed, speed is at x axis. Negative is left and positive is right.
+* If up and down arrows are pressed, speed is at y-axis. Negative is up and positive is down.
+
 
 <!-- 
 * Links you used today (websites, videos, etc)
