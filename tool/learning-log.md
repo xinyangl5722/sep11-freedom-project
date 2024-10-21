@@ -6,7 +6,7 @@
 
 ---
 
-### 10/30/2024:
+### 10/13/2024:
 * I decided to dig deep into Kaboom since I didn't do that well of a research
   * I looked into the official website first
   * I first went into the playground and looked at some examples. I went into some sort of code where a sprite can move
