@@ -27,7 +27,7 @@
  ```js
 const player = add([
 	sprite("ghost"),   // sprite() component makes it render as a sprite
- pos(120, 80),     // pos() component gives it position, also enables movement
+ 	pos(120, 80),     // pos() component gives it position, also enables movement
 ])
 ```
 * But when I looked at my sprite, it was too big
