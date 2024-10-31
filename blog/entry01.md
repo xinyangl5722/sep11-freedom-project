@@ -21,7 +21,7 @@ onKeyDown("down", () => {
 ```
 
 ## EDP
-I have already defined my problem, and brainstormed a possible solution, so now I am **planning the solution**. I am currently planning my game and planning on what to use with my tool. I am still currently in the stage of planning my solution as I still need to figure out the sequence of my game and the components I need for kaboom to make my game.
+I have already defined my problem which is how I want to make my stories into a reality, and brainstormed a possible solution, so now I am **planning the solution** for my project. I am currently planning my game and planning on what to use with my tool. I am still currently in the stage of planning my solution as I still need to figure out the sequence of my game and the components I need for kaboom to make my game.
 
 ## Skills
 One of the skills I have learned was **How to learn**. When I started to tinker my code, instead of looking over multiple video tutorials that are like 4 hours long, I used playground to see the codes they used to see how it works. One of them was adding a sprite. I followed the playground code to see how it works and I encorporated it into my own code while testing it.
