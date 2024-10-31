@@ -22,6 +22,19 @@ onKeyDown("down", () => {
 ## EDP
 I have already defined my problem, and brainstormed a possible solution, so now I am **planning the solution**. I am currently planning my game and planning on what to use with my tool. I am still currently in the stage of planning my solution as I still need to figure out the sequence of my game and the components I need for kaboom to make my game.
 
+## Skills
+One of the skills I have learned was **How to learn**. When I started to tinker my code, instead of looking over multiple video tutorials that are like 4 hours long, I used playground to see the codes they used to see how it works. One of them was adding a sprite. I followed the playground code to see how it works and I encorporated it into my own code while testing it.
+```js
+const player = add([
+	sprite("ghost"),   // sprite() component makes it render as a sprite
+ 	pos(120, 80),     // pos() component gives it position, also enables movement
+])
+```
+Another skill I have learned was **creativity**. I have learned how to be creative with my game and plan on what my game should be like such as backgrounds, the genre and concept of the game, etc. For my game, it was based off of a random universe I had created inside my head. I turned my characters in this universe to be in a small pixel game where they have different levels in a world where they were the only inhabitants.
+
+## Summary
+So in short, I had decided about what tool I decided to use and I had tinkered with it for some time. I had also come up with a plan about my project and how I planned to do a pixel game about one of mu universes I had created for them.
+
 
 [Next](entry02.md)
 
