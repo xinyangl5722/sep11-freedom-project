@@ -33,7 +33,7 @@ const player = add([
 Another skill I have learned was **creativity**. I have learned how to be creative with my game and plan on what my game should be like such as backgrounds, the genre and concept of the game, etc. For my game, it was based off of a random universe I had created inside my head. I turned my characters in this universe to be in a small pixel game where they have different levels in a world where they were the only inhabitants.
 
 ## Summary
-So in short, I had decided about what tool I decided to use and I had tinkered with it for some time. I had also come up with a plan about my project and how I planned to do a pixel game about one of mu universes I had created for them.
+So in short, I had decided about what tool I decided to use and I had tinkered with it for some time. I had also come up with a plan about my project and how I planned to do a pixel game about one of mu universes I had created for them. Overall, I am still looking foward to tinker my tool and plan my game in detail.
 
 
 [Next](entry02.md)
