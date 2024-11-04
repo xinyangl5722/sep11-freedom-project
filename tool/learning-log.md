@@ -54,6 +54,41 @@ onKeyDown("down", () => {
 * If up and down arrows are pressed, speed is at y-axis. Negative is up and positive is down.
 
 
+### 11/4/2024
+* I basically learned how to do a dialogue
+* I looked at the playground to see how they did it
+* I made a box and made the code for the box.
+* Then I created the dialogue which looks something like this-v
+```js
+const dialogs = [
+        [ "bean", "Are you new here?" ],
+        [ "bean", "I'm Qing Yao, but you can just call me YaoYao" ],
+        [ "bean", "Oh yeah, we are in this Dream land. We are basically trapped in here and we have no choice but to go all through these levels or we will go to insanity."],
+        [ "bean", "I need to pass the first three."],
+        [ "bean", "Could you help me?"],
+        ];
+```
+* I then started to recreate the code to make the text appear and changes when I press space-v
+```js
+onKeyPress("space", () => {
+            // Cycle through the dialogs
+            curDialog = (curDialog + 1) % dialogs.length
+            updateDialog()
+        })
+
+        function updateDialog() {
+            const [ char, dialog ] = dialogs[curDialog]
+            // Use a new sprite component to replace the old one
+            avatar.use(sprite(char))
+            // Update the dialog text
+            txt.text = dialog
+        }
+
+        updateDialog()
+```
+* Then I got my dialogue.
+
+
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
