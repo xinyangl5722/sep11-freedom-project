@@ -88,8 +88,28 @@ onKeyPress("space", () => {
 ```
 * Then I got my dialogue.
 
+### 11/23/2024
+* I learned how to make the sprite rotate
+* I first looked in playground. Again.
+* I went over to see the code that is responsible for making the sprite rotate
+	* So I did that with my code
+```js
+player.onUpdate(() => {
+	player.angle += 120 * dt()
+})
+```
+* Then I was like "what if I just take the `dt()`?
+* So I took that part out, and then the sprite was spinning really fast
+* So then I looked at the 120, and see what happens if I turned it to 10
+	* So this was how the code turned out
+```js
+player.onUpdate(() => {
+	player.angle += 10
+})
+```
+* The sprite went a lot slower so the number is saying how fast the sprite is rotating
 
-<!-- 
+<!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
 * Challenges, a-ha moments, etc
