@@ -109,6 +109,30 @@ player.onUpdate(() => {
 ```
 * The sprite went a lot slower so the number is saying how fast the sprite is rotating
 
+
+### 12/8/2024
+* Today I first decided to merge the content I had learned.
+	* This pretty much means I'm putting the two concepts I learned together.
+* So I had frist make the sprite rotate connect with the movement code so it kind of looks like this.
+```js
+player.onUpdate(() => {
+	player.angle += 19 })
+
+onKeyDown("left", () => {
+       player.move(-SPEED, 0)
+})
+onKeyDown("right", () => {
+       player.move(SPEED, 0)
+})
+onKeyDown("up", () => {
+       player.move(0, -SPEED)
+})
+onKeyDown("down", () => {
+       player.move(0, SPEED)
+})
+```
+* So now my sprite is turning while moving
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
