@@ -43,7 +43,7 @@ The play angle shows how fast the sprite rotates. I wonderr what happens if the 
 I am currently still on **Planning the solution**. I am still working on how my knowledge of using kaboom will turn my results to and I still need to see which components I need to do. I may also need to figure out how I can put different scenes together since I have a lot, but I think I'll start with something small.
 
 ## Skills
-One of the skills that I developed is **How to learn**. I looked over the official website and looked over tutorials and looked at the comments in the playground to see how they worked. For example, I learned how to rotate a sprite using this code.
+One of the skills that I developed is **How to learn**. I looked over the [official website](https://kaboomjs.com/) and looked over tutorials and looked at the comments in the playground to see how they worked. For example, I learned how to rotate a sprite using this code.
 ```js
 player.onUpdate(() => {
     player.angle += 19 })
