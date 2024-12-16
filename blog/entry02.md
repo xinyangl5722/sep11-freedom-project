@@ -12,7 +12,8 @@ const dialogs = [
         [ "bean", "Could you help me?"],
         ];
 ```
-I first used `const dialogs` for the dialogues. Then I used square brackets. The first quotation show the sprite representing that sprite is talking, so bean is talking. The next quotation show what bean is saying. Then, I made a code that go to each dialogue every time the space bar is pressed. So I did this.
+I first used `const dialogs` for the dialogues. Then I used square brackets. The first quotation show the sprite representing that sprite is talking, so bean is talking.   
+The next quotation show what bean is saying. Then, I made a code that go to each dialogue every time the space bar is pressed. So I did this.
 ```js
 onKeyPress("space", () => {
             // Cycle through the dialogs
