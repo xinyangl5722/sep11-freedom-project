@@ -37,7 +37,7 @@ Next up, I decided to spin my sprite. I started off with this code.
 player.onUpdate(() => {
     player.angle += 19 * dt()})
 ```
-The play angle shows how fast the sprite rotates. I wonderr what happens if the `dt` is deleted. So I deleted the `dt` and it made my sprite rotate faster.
+The play angle shows how fast the sprite rotates. I wonderr what happens if the `dt` is deleted. So I deleted the `dt` and it made my sprite rotate faster.  
 Currently, this is pretty much what I have so far, but when the winter break ends, my goal is to figure out how to add a background into the game so it doesn't look like the default checkered square that I currently have. I also wanted a character to interact with a sprite that will be an item such as picking up the item when you click on it. Plus, I also wanted an interaction between the main sprite and the enemy sprite such as the enemy sprite chasing the main sprite around until it catches the main sprite. But my actual goal is to complete at least two of these aspects to be learned.
 
 ## EDP
