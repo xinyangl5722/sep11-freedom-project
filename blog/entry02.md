@@ -38,6 +38,7 @@ player.onUpdate(() => {
     player.angle += 19 * dt()})
 ```
 The play angle shows how fast the sprite rotates. I wonderr what happens if the `dt` is deleted. So I deleted the `dt` and it made my sprite rotate faster.
+Currently, this is pretty much what I have so far, but when the winter break ends, my goal is to figure out how to add a background into the game so it doesn't look like the default checkered square that I currently have. I also wanted a character to interact with a sprite that will be an item such as picking up the item when you click on it. Plus, I also wanted an interaction between the main sprite and the enemy sprite such as the enemy sprite chasing the main sprite around until it catches the main sprite. But my actual goal is to complete at least two of these aspects to be learned.
 
 ## EDP
 I am currently still on **Planning the solution**. I am still working on how my knowledge of using kaboom will turn my results to and I still need to see which components I need to do. I may also need to figure out how I can put different scenes together since I have a lot, but I think I'll start with something small.
