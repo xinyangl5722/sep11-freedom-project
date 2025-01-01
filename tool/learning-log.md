@@ -133,6 +133,27 @@ onKeyDown("down", () => {
 ```
 * So now my sprite is turning while moving
 
+### 1/1/2025
+* So today, I decided to change the background because I don't want the grey checkered background anymore
+* I found this [video](https://www.youtube.com/watch?v=l6cwmwW40jw) on how to make a shooting game so maybe I can use that as inspiration for changing the background
+* So I found out that he made his screen pitch black so that could be the first step to my game because I still need to find out how to make sprites and stuff
+* So I did the code to change the background to pitch black, and it looks like this
+```
+kaboom({
+	background: [0, 0, 0],
+	scale: 0.5,
+        });
+```
+* Kaboom uses RGB color hex, so I used 0,0,0 for it and made a scale for it, but then my sprite was gone.
+* So then I decided to delete the scale and see what would happen
+```
+kaboom({
+	background: [0, 0, 0],
+        });
+```
+* And when I run the code again, the sprites finally popped up!
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
