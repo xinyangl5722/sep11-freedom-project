@@ -154,6 +154,32 @@ kaboom({
 * And when I run the code again, the sprites finally popped up!
 
 
+### 1/12/2025
+* So I started to figure out how to make my sprite collect an item
+* I first grabbed my bean sprite and make the movement code I did
+* Then I made the "enemy" that my sprite is going to collect
+	* I first made a for loop to add the "enemy" sprite
+ 	* Then I add the "enemy" spite
+    ```js
+    for (let i = 0; i <1; i++) {
+    add([
+    	sprite("boy"),
+    	scale(0.1),
+   	 pos(300,300),
+    	// Both objects must have area() component to enable collision detection between
+    	area(),
+    "	enemy",
+    ])
+    }
+    ```
+    * Then I make the sprite collect the "enemy" sprite by using this code
+      ```js
+      player.onCollide("enemy", (enemy) => {
+      	destroy(enemy)
+      })
+      ```
+* Now my sprite can collect the object!
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
