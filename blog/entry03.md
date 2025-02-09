@@ -23,7 +23,7 @@ That is what I have so far, but I wanted to figure out how to add scenes into th
 I however, am still on **planning the solution** as I still have a long way to go to complete all the learning aspects I need to make the code. I have finished a few parts of it such as changing the background color and collecting items, but I still need to figure out how to put different scenes together and make each scene enjoyable to the players and not just boring. So, I still have mores stuff to learn, but hopefully, I will be able to get there.
 
 ## Skills
-One of the skills I believe I have developed was **How to learn**. I looked over the code that leads to the certain result in the outcome to understand how it works. For example, I have learned what `.onCollide` represents as when I looked at the code, it looks like a function. the `.onCollide` would mean that when one thing collides with another.
+One of the skills I believe I have developed was **How to learn**. I looked over the code that leads to the certain result in the outcome to understand how it works. For example, I have learned what `.onCollide` represents as when I looked at the code, it looks like a function. the `.onCollide` would mean that when one thing collides with another.  
 Another one of the skills I believe I have learned was **How to google**. Technically, I did some digging on YouTube. I looked over tutorials that could benefit me in changing my background by typing something like "how to change background color on kaboom". I found a [video](https://www.youtube.com/watch?v=l6cwmwW40jw) on how to make some sort of game which I believe it has some of the components I would need to create my game. So I looked into that and found out how to change my background color.
 
 ## Summary
