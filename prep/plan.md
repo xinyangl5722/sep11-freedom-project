@@ -1,7 +1,7 @@
 # Plan
 
-## Tool: 
-## Product: 
+## Tool: Kaboom
+## Product: Pixel Game with levels in a house
 
 ---
 
@@ -9,8 +9,12 @@
 
 #### MVP
 
-- [ ] Task (deadline: X)
-  - [ ] Subtask (deadline: X)
+- [ ] Draw the characters and background (Due= March 3)
+  - [ ] Draw the character for dialogue (Due= Feb. 14)
+  - [ ] Draw the background for the dialogue (Due= Feb. 19)
+  - [ ] Draw the background & additional sprites for the first level (Due Feb. 27)
+  - [ ] Draw the sprite different animation frames (Due= March 1)
+  - [ ] Draw the other character
 
 #### Beyond MVP
 
