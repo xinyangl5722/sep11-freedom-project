@@ -1,7 +1,7 @@
 # Plan
 
 ## Tool: Kaboom
-## Product: Pixel Game with levels in a house
+## Product: DreamLand Old House Pixel Game
 
 ---
 
@@ -9,12 +9,19 @@
 
 #### MVP
 
-- [ ] Draw the characters and background (Due= March 3)
-  - [ ] Draw the character for dialogue (Due= Feb. 14)
-  - [ ] Draw the background for the dialogue (Due= Feb. 19)
-  - [ ] Draw the background & additional sprites for the first level (Due Feb. 27)
-  - [ ] Draw the sprite different animation frames (Due= March 1)
-  - [ ] Draw the other character
+- [ ] Drawings
+  - [ ] Draw the character with three different poses, and with three small animation poses (Deadline= Feb. 21)
+  - [ ] Draw the background of the woods and a door and barriers. (Deadline= Feb. 24)
+  - [ ] Draw the background of the inside house layout, then the barriers, the key, the map, the sword, and the door (Deadline= March 1)
+- [ ] Scene One
+  - [ ] Create a black background and a textbox that says "Welcome, click to start your journey" (Deadline= March 3)
+  - [ ] Create a dialogue box with the character on top. Create 9 dialogues. (Deadline= March 7)
+  - [ ] Create code where when you click, the next scene comes (Deadline= March 11)
+- [ ] Scene Two
+  - [ ] Insert the background into the code and start with the layout and the items and character (Deadline= March 14)
+  - [ ] Make the character move first with animation (Deadline= March 16)
+  - [ ] Make code where the key will be collected by the player (Deadline= March 20)
+  - [ ] Make code where if there is key is collected, can go to next round (Deadline= March 25)
 
 #### Beyond MVP
 
