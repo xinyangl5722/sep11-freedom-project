@@ -180,6 +180,39 @@ kaboom({
       ```
 * Now my sprite can collect the object!
 
+### 3/2/2025
+* I learned how to make some sort of obstacle course
+	* First I made some sort of layout
+	```js
+ 	const level = addLevel([
+            "  @    ",
+            "=======",
+        ],
+ 	```
+ 	* After I made this code, I assigned each symbol for each sprite. Here's what I did
+    	```js
+     	"=": () => [
+                    sprite("boy"),
+                    area(),
+                    scale(0.1),
+                    body({ isStatic: true }),
+                    anchor("bot"),
+                ],
+     	```
+     * I did not have a block sprite so I just used a pixel boy for a a block
+     * I had learned that the `isStatic: true` code means that the sprite will be the sprite you cannot go over. If you go on top, you will stay on top of that sprite.
+     * Then I later make the code for my player sprite which is my green bean (aka my test subject) to move to the left and right (the code is the same code from **10/21** for left and right arrows.
+     * To make my sprite jump, I made a code for when the player is standing, then it will jump when pressed the space button.
+       ```js
+       onKeyPress("space", () => {
+            if (player.isGrounded()) {
+                player.jump()
+            }
+        })
+       ```
+       * So I have learned that the `player.jump` means to jump and `player.isGrounded` means that when the player is on the ground
+  * So when I put them all together I have my green bean sprite moving and jumping around the boy sprite
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
