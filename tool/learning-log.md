@@ -212,6 +212,22 @@ kaboom({
        ```
        * So I have learned that the `player.jump` means to jump and `player.isGrounded` means that when the player is on the ground
   * So when I put them all together I have my green bean sprite moving and jumping around the boy sprite
+ 
+### 3/9/2025
+* So today, I learned how to make the camera on to the center of the player
+	* This would be perfect for my second level for the obby
+ * I first learned the `camPos` which means where the position of the camera is at
+ * Then I learned thaat the `.pos` inside the parentheses would tell where the camera is focusing on. So I added all that together
+   ```js
+   camPos(player.pos)
+   ```
+* However, when I tried, it didn't really work. So I looked over back at the past codes. I found out that there was the `onUpdate` code for rotating a sprite. So I wondered if that works for the positioning of the camera too. So this is what I did
+  ```js
+  player.onUpdate(() => {
+   camPos(player.pos)
+   })
+  ```
+  So now it works. Just that the camera is kind of shaky. It's probably because the bean is standing on the boy sprites than the blocks.
 
 <!--
 * Links you used today (websites, videos, etc)
