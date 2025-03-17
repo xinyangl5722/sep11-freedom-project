@@ -9,7 +9,7 @@ const level = addLevel([
   "=======",
 ],
 ```
-Then, I assign each symbol a sprite. I decided to make the _@_ symbol for the green bean sprite. However, since I don't have the sprite for a flat surface, I decided to just use the boy sprite. Later, I decided to make the boy a solid surface, which is to make it static. 
+Then, I assign each symbol a sprite. I decided to make the _@_ symbol for the green bean sprite. However, since I don't have the sprite for a flat surface, I decided to just use the boy sprite. Later, I decided to make the boy a solid surface, which is to make it static.
 ```js
 "=": () => [
   sprite("boy"),
@@ -34,6 +34,15 @@ player.onUpdate(() => {
 })
 ```
 So now, my camera is focused on the green bean sprite. The camera is a bit shaky. Probably it's because my green bean sprite is on a boy sprite instead of a block sprite.
+
+### EDP
+I'm still at the **planning the solution**, but I'm getting closer to **making the prototype**. I firgured out the main compartments for an obstacle course currently. However, I still need to figure out how to create scenes for each part of the game. I still have a lot of stuff to learn but I think I will be getting there.
+
+### Skills
+One skill I have developed was **creatiivity**. I learned to create new ideas for my game in the second level and decided to make an obby instead. I also developed my skill of **how to learn**. I learned how to make the basics of an obby such as making a sprite being solid which can be on top of using the `isStatic: true` code. In addition, I had also learned to make the camera focused onto the main sprite going to the obstacle course by using the `camPos` and using the `player.pos` to focus on the player.
+
+### Summary
+In short, I created the basics for an obstacle course. I made the camera focusing onto the player, and I created a basic platform for the player to just walk and jump around on. Next step is to find out how to create a scene and connecting those one by one.
 
 [Previous](entry03.md) | [Next](entry05.md)
 
