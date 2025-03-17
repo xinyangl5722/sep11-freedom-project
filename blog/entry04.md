@@ -2,7 +2,7 @@
 ##### 3/10/2025
 
 ## Tinkering Process Part 3
-I also had gotten little progress over the days as well. However, I got the process of making an obstacle course. Some part of the main obstacle course is that there has to be a platform surface in every obby game or else you will be falling in the air. So I decided to make something for my green bean sprite to land on. First, I created some sort of layout for the obstacle course.
+I also had gotten little progress over the days as well. However, I got the process of making an obstacle course. I first went to the [official website of Kaboom](https://kaboomjs.com/play?example=platformer)Some part of the main obstacle course is that there has to be a platform surface in every obby game or else you will be falling in the air. So I decided to make something for my green bean sprite to land on. First, I created some sort of layout for the obstacle course.
 ```js
 const level = addLevel([
   "  @    ",
