@@ -2,7 +2,7 @@
 ##### 3/10/2025
 
 ## Tinkering Process Part 3
-I also had gotten little progress over the days as well. However, I got the process of making an obstacle course. I first went to the [official website of Kaboom](https://kaboomjs.com/play?example=platformer)Some part of the main obstacle course is that there has to be a platform surface in every obby game or else you will be falling in the air. So I decided to make something for my green bean sprite to land on. First, I created some sort of layout for the obstacle course.
+I had also gotten little progress over the days as well. However, I got the process of making an obstacle course. I first went to the [official website of Kaboom](https://kaboomjs.com/play?example=platformer)Some part of the main obstacle course is that there has to be a platform surface in every obby game or else you will be falling in the air. So I decided to make something for my green bean sprite to land on. First, I created some sort of layout for the obstacle course.
 ```js
 const level = addLevel([
   "  @    ",
@@ -42,7 +42,7 @@ I'm still at the **planning the solution**, but I'm getting closer to **making t
 One skill I have developed was **creatiivity**. I learned to create new ideas for my game in the second level and decided to make an obby instead. I also developed my skill of **how to learn**. I learned how to make the basics of an obby such as making a sprite being solid which can be on top of using the `isStatic: true` code. In addition, I had also learned to make the camera focused onto the main sprite going to the obstacle course by using the `camPos` and using the `player.pos` to focus on the player.
 
 ### Summary
-In short, I created the basics for an obstacle course. I made the camera focusing onto the player, and I created a basic platform for the player to just walk and jump around on. Next step is to find out how to create a scene and connecting those one by one.
+In short, I created the basics for an obstacle course. I made the camera focusing onto the player, and I created a basic platform for the player to just walk and jump around on. The next step is to find out how to create a scene and connecting those one by one.
 
 [Previous](entry03.md) | [Next](entry05.md)
 
