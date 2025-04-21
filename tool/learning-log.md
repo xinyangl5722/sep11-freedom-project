@@ -229,6 +229,24 @@ kaboom({
   ```
   So now it works. Just that the camera is kind of shaky. It's probably because the bean is standing on the boy sprites than the blocks.
 
+3/23
+* Today, I finally learned how to make scenes and adding them up together
+* I first created a scene from [this YouTube video](https://www.youtube.com/watch?v=GVpDVp4nsG4&t=192s) where they showed how to create a scene
+```js
+scene("start", () => {
+
+})
+```
+* I decided to add whatever I want and then add another scene but it's for the actual game
+* Then I went to [the actual kaboom website](https://kaboomjs.com/play?example=rpg) to connect the two scenes together
+* I later put this code inside the start scene to get to the game scene
+```js
+onKeyPress("space", () => {
+	go("game")
+})
+```
+* Now, I have made two scenes and connected them together
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
