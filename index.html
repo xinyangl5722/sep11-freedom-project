@@ -100,7 +100,7 @@
 
          scene("game2", () => {
              const SPEED = 320
-             const level = addLevel([
+             const levels = addLevel([
                 // Design the level layout with symbols
                 "   00000000000000",
                 "   0            0",
@@ -111,7 +111,8 @@
                 "   0  @         0",
                 "   0            0",
                 "   00000000000000",
-            ], {
+            ]), 
+                const level = addLevel(levels[levelIdx], {
                 // The size of each grid
                 tileWidth: 64,
                 tileHeight: 64,
@@ -124,8 +125,9 @@
                         area(),
                         body(),
                         scale(0.1)
+                        anchor("bot"),
                         "player",
-                    ],
+                ],
                     "0": () => [
                         sprite("brick"),
                         area(),
@@ -147,6 +149,7 @@
                 player.move(SPEED, 0)
             })
             })
+        })
 
 
 
