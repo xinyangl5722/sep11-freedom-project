@@ -99,56 +99,178 @@
 
 
          scene("game2", () => {
+            //  const SPEED = 320
+            //   const levels = addLevel([
+            //     // Design the level layout with symbols
+            //     "   00000000000000",
+            //     "   0            0",
+            //     "   0            0",
+            //     "   0           =0",
+            //     "   0            -",
+            //     "   0            0",
+            //     "   0  @         0",
+            //     "   0            0",
+            //     "   00000000000000",
+            // ]),
+            //     level = addLevel(levels[levelIdx], {
+            //     // The size of each grid
+            //     tileWidth: 64,
+            //     tileHeight: 64,
+            //     // The position of the top left block
+            //     pos: vec2(64, 64),
+            //     // Define what each symbol means (in components)
+            //     tiles: {
+            //         "@": () => [
+            //             sprite("pixel"),
+            //             area(),
+            //             body(),
+            //             scale(0.1),
+            //             anchor("bot"),
+            //             "player",
+            //     ],
+            //         "0": () => [
+            //             sprite("brick"),
+            //             area(),
+            //             scale(0.03),
+            //             body({ isStatic: true }),
+            //             anchor("center"),
+            //         ],
+            //     },
+            // }),
+
+
+
+
+            // player = level.get("player")[0]
+
+            // onKeyDown("left", () => {
+            //     player.move(-SPEED, 0)
+            // })
+            // onKeyDown("right", () => {
+            //     player.move(SPEED, 0)
+            // })
              const SPEED = 320
-             const levels = addLevel([
-                // Design the level layout with symbols
-                "   00000000000000",
-                "   0            0",
-                "   0            0",
-                "   0           =0",
-                "   0            -",
-                "   0            0",
-                "   0  @         0",
-                "   0            0",
-                "   00000000000000",
-            ]), 
-                const level = addLevel(levels[levelIdx], {
-                // The size of each grid
-                tileWidth: 64,
-                tileHeight: 64,
-                // The position of the top left block
-                pos: vec2(64, 64),
-                // Define what each symbol means (in components)
-                tiles: {
-                    "@": () => [
-                        sprite("pixel"),
-                        area(),
-                        body(),
-                        scale(0.1)
-                        anchor("bot"),
-                        "player",
+         const level = addLevel([
+             // Design the level layout with symbols
+             "                   ",
+             "                   ",
+             "                   ",
+             "                   ",
+             "                   ",
+             "  @         =     -",
+         ], {
+             // The size of each grid
+             tileWidth: 64,
+             tileHeight: 64,
+             // The position of the top left block
+             pos: vec2(64, 64),
+             // Define what each symbol means (in components)
+             tiles: {
+                 "@": () => [
+                     sprite("pixel"),
+                     area(),
+                     body(),
+                     scale(0.1),
+                     anchor("bot"),
+                     "player",
+                 ],
+                 "=": () => [
+                     sprite("Key"),
+                     area(),
+                     scale(0.05),
+                     body(),
+                     anchor("bot"),
+                     "Key"
+                 ],
+                 "-": () => [
+                     sprite("door"),
+                     area(),
+                     scale(0.1),
+                     body({ isStatic: true }),
+                     anchor("bot"),
+                     "door"
+                 ],
+             },
+         }),
+
+
+        player = level.get("player")[0]
+        const Key = level.get("Key")[0]
+
+         onKeyDown("left", () => {
+	        player.move(-SPEED, 0)
+        })
+        onKeyDown("right", () => {
+	        player.move(SPEED, 0)
+        })
+       onKeyDown("up", () => {
+	       player.move(0, -SPEED)
+       })
+       onKeyDown("down", () => {
+	       player.move(0, SPEED)
+       })
+
+
+       Key.onCollide("door", () => {
+        go("game3")
+       })
+        })
+
+
+        scene("game3", () => {
+                const SPEED = 320
+
+        setGravity(2400)
+        const level = addLevel([
+            // Design the level layout with symbols
+            "  @    ",
+            "=======",
+        ], {
+            // The size of each grid
+            tileWidth: 64,
+            tileHeight: 64,
+            // The position of the top left block
+            pos: vec2(100, 200),
+            // Define what each symbol means (in components)
+            tiles: {
+                "@": () => [
+                    sprite("pixel"),
+                    area(),
+                    body(),
+                    scale(0.1),
+                    anchor("bot"),
+                    "player",
                 ],
-                    "0": () => [
-                        sprite("brick"),
-                        area(),
-                        scale(0.03),
-                        body({ isStatic: true }),
-                        anchor("center"),
-                    ],
-                },
-            })
+                "=": () => [
+                    sprite("brick"),
+                    area(),
+                    scale(0.05),
+                    body({ isStatic: true }),
+                    anchor("bot"),
+                ],
+            },
+        })
 
 
 
-            const player = level.get("player")[0]
+        const player = level.get("player")[0]
 
-            onKeyDown("left", () => {
-                player.move(-SPEED, 0)
-            })
-            onKeyDown("right", () => {
-                player.move(SPEED, 0)
-            })
-            })
+        onKeyDown("left", () => {
+	       player.move(-SPEED, 0)
+       })
+       onKeyDown("right", () => {
+	       player.move(SPEED, 0)
+       })
+       onKeyPress("space", () => {
+            if (player.isGrounded()) {
+                player.jump()
+            }
+        })
+
+        player.onUpdate(() => {
+            camPos(player.pos)
+        })
+
         })
 
 
