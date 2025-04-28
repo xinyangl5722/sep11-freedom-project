@@ -29,7 +29,7 @@ So as I'm writing this, the game is still not done. I am having trouble making t
 I'm currently somewhat finished with **Create the prototype** and also finishing **testing the prototype**. I created the minimum for the project. However, I have also tested it by going through the game. However, I still need to continue improving the game by adding a few more levels and improving the text.
 
 ### Skills
-One skill I have learned is **Attention to detail**. During my code, I had a lot of errors while creating the mvp. Many of these errors were syntax errors. I was able to learn how to fix the errors and spelling the code correctly.
+One skill I have learned is **Attention to detail**. During my code, I had a lot of errors while creating the mvp. Many of these errors were syntax errors. I was able to learn how to fix the errors and spelling the code correctly.  
 Another skill I have learn was **Debugging**. Many of these errors was also about debugging code. Sometimes, I forgot to define a variable in the game, and sometimes, I might have created an error in writing a variable for the other one. So I learned to debug it by putting the variables in the same place in order for the code to work.
 
 ### Summary
