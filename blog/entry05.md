@@ -22,14 +22,14 @@ Key.onCollide("door", () => {
     go("game3")
 })
 ```
-So the `Key.onCollide` is if the key sprite collided onto... and the key sprite is colliding to the door sprite. So if the key sprite touched the door sprite, it will go to the third scene which is another game scene `game3`. [This is currently my game so far.](https://xinyangl5722.github.io/sep11-freedom-project/index.html)
+So the `Key.onCollide` is if the key sprite collided onto... and the key sprite is colliding to the door sprite. So if the key sprite touched the door sprite, it will go to the third scene which is another game scene `game3`. [This is currently my game so far.](https://xinyangl5722.github.io/sep11-freedom-project/index.html)  
 So as I'm writing this, the game is still not done. I am having trouble making the block sprite completely still since my pixel will fall in the middle of each block sprite when it jumps.
 
 ### EDP
 I'm currently somewhat finished with **Create the prototype** and also finishing **testing the prototype**. I created the minimum for the project. However, I have also tested it by going through the game. However, I still need to continue improving the game by adding a few more levels and improving the text.
 
 ### Skills
-One skill I have learned is **Attention to detail**. During my code, I had a lot of errors while creating the mvp. Many of these errors were syntax errors. I was able to learn how to fix the errors and spelling the code correctly.  
+One skill I have learned is **Attention to detail**. During my code, I had a lot of errors while creating the mvp. Many of these errors were syntax errors. I was able to learn how to fix the errors and spelling the code correctly.
 Another skill I have learn was **Debugging**. Many of these errors was also about debugging code. Sometimes, I forgot to define a variable in the game, and sometimes, I might have created an error in writing a variable for the other one. So I learned to debug it by putting the variables in the same place in order for the code to work.
 
 ### Summary
