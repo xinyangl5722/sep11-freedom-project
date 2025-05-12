@@ -22,6 +22,8 @@
         loadSprite("Key","mygame/www/sprites/Key.PNG")
         loadSprite("brick","mygame/www/sprites/brick.PNG")
         loadSprite("door","mygame/www/sprites/door.PNG")
+        loadSprite("golddoor","mygame/www/sprites/golddoor.PNG")
+        loadSprite("you","mygame/www/sprites/You.PNG")
 
 
 
@@ -37,9 +39,20 @@
 
         scene("game", () =>{
             const dialogs = [
-                [ "Char", "text" ],
-                [ "Char2", "textext" ],
-                [ "Char3", "even more text" ],
+                [ "Char", "Hellowww!!" ],
+                [ "you", "You= Omg where did you come from? And where am I?"],
+                [ "Char3", "My-name-is-Qing-Yao-but-you-can-also-call-me-YaoYao-and-you-are-in-some-sort-of-dreamland-world-HII" ],
+                [ "you", "You= ....." ],
+                ["Char2", "You, don't know what I said? Sorry, I was too excited. Haven't seen a person in so long. :D. You can call me YaoYao for now. I'm nine and you are in this dreamland. I assume you came from a portal in heaven after you passed right?"],
+                ["you", "You= Yeaahhh-wait-a-minute- YOU'RE NINE!? HOW DID YOU GET OVER HERE?"],
+                ["Char", "I was at a hot-air balloon!"],
+                ["you", "You= ...Okay, that didn't explain everything. So we're in this sort of dreamland world? Doesn't look like one."],
+                ["Char", "Yeah, they told me that we will see the dreamland if you go deep into the journey. There's this door, but I'm too scared to go. Can you come with me? c:"],
+                ["you", "You= Sure...It's not like I have a choice anyways...So what do we do?"],
+                ["Char3", "Well, you just push the key to the door and do some obstacles to get to the gold door. Also sometimes, you can even sink on top of the blocks!"],
+                ["you", "You= Okay. How do you know that?"],
+                ["Char2", "They told me!"],
+                ["you", "You= WHO IS THEY!?"],
             ]
 
             let curDialog = 0
@@ -54,9 +67,9 @@
 
             // Text bubble
             const textbox = add([
-                rect(width() - 200, 120, { radius: 32 }),
+                rect(width() - 200, 185, { radius: 50 }),
                 anchor("center"),
-                pos(center().x, height() - 100),
+                pos(center().x, height() - 90),
                 outline(4),
             ])
 
@@ -98,67 +111,21 @@
 
 
 
+
+
+
          scene("game2", () => {
-            //  const SPEED = 320
-            //   const levels = addLevel([
-            //     // Design the level layout with symbols
-            //     "   00000000000000",
-            //     "   0            0",
-            //     "   0            0",
-            //     "   0           =0",
-            //     "   0            -",
-            //     "   0            0",
-            //     "   0  @         0",
-            //     "   0            0",
-            //     "   00000000000000",
-            // ]),
-            //     level = addLevel(levels[levelIdx], {
-            //     // The size of each grid
-            //     tileWidth: 64,
-            //     tileHeight: 64,
-            //     // The position of the top left block
-            //     pos: vec2(64, 64),
-            //     // Define what each symbol means (in components)
-            //     tiles: {
-            //         "@": () => [
-            //             sprite("pixel"),
-            //             area(),
-            //             body(),
-            //             scale(0.1),
-            //             anchor("bot"),
-            //             "player",
-            //     ],
-            //         "0": () => [
-            //             sprite("brick"),
-            //             area(),
-            //             scale(0.03),
-            //             body({ isStatic: true }),
-            //             anchor("center"),
-            //         ],
-            //     },
-            // }),
-
-
-
-
-            // player = level.get("player")[0]
-
-            // onKeyDown("left", () => {
-            //     player.move(-SPEED, 0)
-            // })
-            // onKeyDown("right", () => {
-            //     player.move(SPEED, 0)
-            // })
-             const SPEED = 320
-         const level = addLevel([
-             // Design the level layout with symbols
-             "                   ",
-             "                   ",
-             "                   ",
-             "                   ",
-             "                   ",
-             "  @         =     -",
-         ], {
+            const SPEED = 320
+            const level = addLevel([
+                // Design the level layout with symbols
+                "                   ",
+                "                   ",
+                "                   ",
+                "                   ",
+                "                   ",
+                "  @         =     -",
+            ],
+            {
              // The size of each grid
              tileWidth: 64,
              tileHeight: 64,
@@ -190,87 +157,207 @@
                      anchor("bot"),
                      "door"
                  ],
-             },
-         }),
+                },
+            }),
 
+            player = level.get("player")[0]
+            const Key = level.get("Key")[0]
 
-        player = level.get("player")[0]
-        const Key = level.get("Key")[0]
+            onKeyDown("left", () => {
+                player.move(-SPEED, 0)
+            })
+            onKeyDown("right", () => {
+	            player.move(SPEED, 0)
+            })
+            onKeyDown("up", () => {
+	            player.move(0, -SPEED)
+            })
+            onKeyDown("down", () => {
+                player.move(0, SPEED)
+            })
 
-         onKeyDown("left", () => {
-	        player.move(-SPEED, 0)
-        })
-        onKeyDown("right", () => {
-	        player.move(SPEED, 0)
-        })
-       onKeyDown("up", () => {
-	       player.move(0, -SPEED)
-       })
-       onKeyDown("down", () => {
-	       player.move(0, SPEED)
-       })
-
-
-       Key.onCollide("door", () => {
-        go("game3")
-       })
+            Key.onCollide("door", () => {
+                go("game3")
+            })
         })
 
 
-        scene("game3", () => {
-                const SPEED = 320
-
-        setGravity(2400)
-        const level = addLevel([
-            // Design the level layout with symbols
-            "  @    ",
-            "=======",
-        ], {
-            // The size of each grid
-            tileWidth: 64,
-            tileHeight: 64,
-            // The position of the top left block
-            pos: vec2(100, 200),
-            // Define what each symbol means (in components)
-            tiles: {
-                "@": () => [
-                    sprite("pixel"),
-                    area(),
-                    body(),
-                    scale(0.1),
-                    anchor("bot"),
-                    "player",
-                ],
-                "=": () => [
+         scene("game3", () => {
+            const SPEED = 320
+            setGravity(1600)
+            const level = addLevel([
+                // Design the level layout with symbols
+                "                   0         0          0",
+                "               =================================",
+                "            7         ",
+                "                                                 =",
+                "                    ",
+                "                                               ===",
+                "@                                       ======",
+                "        0      0           ============",
+                "==========================",
+            ],
+            {
+             // The size of each grid
+             tileWidth: 64,
+             tileHeight: 64,
+             // The position of the top left block
+             pos: vec2(64, 64),
+             // Define what each symbol means (in components)
+             tiles: {
+                 "@": () => [
+                     sprite("pixel"),
+                     area(),
+                     body(),
+                     scale(0.1),
+                     anchor("bot"),
+                     "player",
+                 ],
+                 "=": () => [
                     sprite("brick"),
                     area(),
                     scale(0.05),
                     body({ isStatic: true }),
                     anchor("bot"),
                 ],
-            },
+                 "9": () => [
+                     sprite("Key"),
+                     area(),
+                     scale(0.1),
+                     body(),
+                     anchor("bot"),
+                     "Key"
+                 ],
+                 "7": () => [
+                     sprite("golddoor"),
+                     area(),
+                     scale(0.06),
+                     body({isStatic: true}),
+                     anchor("bot"),
+                     "door"
+                ],
+                 "0": () => [
+                     sprite("door"),
+                     area(),
+                     scale(0.05),
+                     body({ isStatic: true }),
+                     anchor("bot"),
+                     "enemy"
+                 ],
+                },
+            }),
+
+            player = level.get("player")[0]
+            const Key = level.get("Key")[0]
+
+            onKeyDown("left", () => {
+                player.move(-SPEED, 0)
+            })
+            onKeyDown("right", () => {
+	            player.move(SPEED, 0)
+            })
+            onKeyDown("up", () => {
+	            player.move(0, -SPEED)
+            })
+            onKeyPress("space", () => {
+                if (player.isGrounded()) {
+                    player.jump()
+                }
+            })
+
+
+            player.onUpdate(() => {
+                camPos(player.pos)
+
+                if (player.pos.y >= 480) {
+			player.pos = level.tile2Pos(0, 0)
+		}
+
+                player.onCollide("enemy", () => {
+                    player.pos = level.tile2Pos(0, 0)
+                })
+
+                player.onCollide("door", () => {
+                    go("finish")
+                })
+            })
         })
 
 
 
-        const player = level.get("player")[0]
 
-        onKeyDown("left", () => {
-	       player.move(-SPEED, 0)
-       })
-       onKeyDown("right", () => {
-	       player.move(SPEED, 0)
-       })
-       onKeyPress("space", () => {
-            if (player.isGrounded()) {
-                player.jump()
+        scene("finish", () =>{
+            const dialogs = [
+                [ "Char", "Yay! We finished!" ],
+                [ "you", "You= That's was all? That was what you're scared of?" ],
+                [ "Char", "Yeah, it was dark, but we still have to keep going! :D" ],
+                ["you", "You= OKay.....Soo, what happens after we see the dremland? Will we go back to heaven?"],
+                ["Char", "......"],
+                ["you", "You= uhhh, you okay-"],
+                ["Char", "I told you I was at a hot air balloon right?"],
+                ["you", "You= Yeahhh...What does that have to do with anything?"],
+                ["Char", "I fell."],
+                ["you", "You= ...."],
+                ["Char", "It's been 5 years since I've been here. I've been though the whole thing."],
+                ["Char3", "But once I got to the end, there was an error for some reason. I had to start over with little to no memories of what had happened."],
+                ["Char", "There are actually secrets in this land. I just don't remember."],
+                ["you", "You= So you're technically 14 years....how do we get back?"],
+                ["Char", "What are you talking about?"],
+                ["Char", "We can't."],
+                ["Char", "We're stuck here."],
+            ]
+
+            let curDialog = 0
+
+            // Character avatar
+            const avatar = add([
+                sprite("Char"),
+                scale(0.5),
+                anchor("center"),
+                pos(center().sub(0, 50)),
+            ])
+
+            // Text bubble
+            const textbox = add([
+                rect(width() - 200, 120, { radius: 32 }),
+                anchor("center"),
+                pos(center().x, height() - 100),
+                outline(4),
+            ])
+
+            // Text
+            const txt = add([
+                text("", { size: 32, width: width() - 230, align: "center" }),
+                pos(textbox.pos),
+                anchor("center"),
+                color(0, 0, 0),
+            ])
+
+
+            onKeyPress("space", () => {
+                // Cycle through the dialogs
+                curDialog++
+                if(curDialog < dialogs.length){
+                    updateDialog()
+                }
+                else{
+                    go("finish 2")
+                }
+            })
+
+            // Update the on screen sprite & text
+            function updateDialog() {
+
+                const [ char, dialog ] = dialogs[curDialog]
+
+                // Use a new sprite component to replace the old one
+                avatar.use(sprite(char))
+                // Update the dialog text
+                txt.text = dialog
+
             }
-        })
 
-        player.onUpdate(() => {
-            camPos(player.pos)
-        })
-
+            updateDialog()
         })
 
 
@@ -282,6 +369,11 @@
             onKeyPress("space", () => {
                 go("game")
             })
+        })
+        scene("finish 2", () => {
+            add([
+                text("Yay, you finished Chapter 1! Refresh to start over. (TBC)")
+            ])
         })
 
 
