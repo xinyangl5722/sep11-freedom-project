@@ -7,7 +7,7 @@
 * Include link for game
 * Explain what my game is= Pixel story game that includes a chapter
 * Explain my story game in like 3 sentences when going through the dialogue.
-  * It starts off with the player getting into a dark room and a girl being excited to meeting them. Basically the player is passed and has to go through this journey to go to heaven. She talks about how the player is in the a place in a journey to Dreamland, but they have to go through obstacles first.
+  * It starts off with the player getting into a dark room and a girl being excited to meet them. Basically the player is passed and has to go through this journey to go to heaven. She talks about how the player is in a place in a journey to Dreamland, but they have to go through obstacles first.
 
 ## Process
 * Learning the code itself= Basics which is how to add & move characters, making them jump
