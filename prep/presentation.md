@@ -1,16 +1,27 @@
 # Presentation Plan
 
 ## Hook
-* 
+* Who creates characters? Who creates stories and their own universes. (Interactive hook) I turn my characters and their setting into life digitally.
 
 ## Product
-* 
+* Include link for game
+* Explain what my game is= Pixel story game that includes a chapter
+* Explain my story game in like 3 sentences when going through the dialogue.
+ * It starts off with the player getting into a dark room and a girl being excited to meeting them. Basically the player is passed and has to go through this journey to go to heaven. She talks about how the player is in the a place in a journey to Dreamland, but they have to go through obstacles first.
 
 ## Process
-* 
+* Learning the code itself= Basics which is how to add & move characters, making them jump
+* I later started to learn how to create scenes in a game and starting to connect them together
+ * Use arrays for dialogue and levels
+* mvp= No dialogue text -> pushing a key -> Level with a character in a platform
+* Beyond mvp= Adding dialogue + Advancing the platform with an actual obstacle course + additional dialogue at the end
+ * Challenge= What to do when a player falls off the obstacle course. It just stayed there. I want to reset. So I looked back at Kaboom tutorials to figure it out
 
 ## Conclusion
-* 
+* Takeaway= always plan each scene before learning a tool. What components and code do they need to function? What does each scene need? That way, you won't forget to learn these before you do the project.
+* Takeaway 2= Creativity is also important for a game that includes story-telling
+* Sometimes, making a game doesn't just focus on code and technology, but the creativity of your mind
+* Short permanent link to the game
 
 <!-- EXAMPLE
 
