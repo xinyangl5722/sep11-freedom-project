@@ -25,20 +25,19 @@
         loadSprite("golddoor","mygame/www/sprites/golddoor.PNG")
         loadSprite("you","mygame/www/sprites/You.PNG")
 
-
-
+        //Start Scene
         scene("start", () => {
             add([
-                text("press space to start"),
+                text("press space to start"), //Add text to start
                 pos(width()/2, height()/2),
             ])
-            onKeyPress("space", () => {
+            onKeyPress("space", () => { //If space pressed, then go to the game scene
                 go("game")
             })
         })
 
         scene("game", () =>{
-            const dialogs = [
+            const dialogs = [ //Show dialogues
                 [ "Char", "Hellowww!!" ],
                 [ "you", "You= Omg where did you come from? And where am I?"],
                 [ "Char3", "My-name-is-Qing-Yao-but-you-can-also-call-me-YaoYao-and-you-are-in-some-sort-of-dreamland-world-HII" ],
@@ -55,9 +54,9 @@
                 ["you", "You= WHO IS THEY!?"],
             ]
 
-            let curDialog = 0
+            let curDialog = 0 //Which dialogue level
 
-            // Character avatar
+            // Character Placement
             const avatar = add([
                 sprite("Char"),
                 scale(0.5),
@@ -65,65 +64,55 @@
                 pos(center().sub(0, 50)),
             ])
 
-            // Text bubble
+            // Text box
             const textbox = add([
-                rect(width() - 200, 185, { radius: 50 }),
-                anchor("center"),
-                pos(center().x, height() - 90),
+                rect(width() - 200, 185, { radius: 50 }), //Width of the text-box, and radius is the round corners
+                anchor("center"), //Make the box center
+                pos(center().x, height() - 90), //Height of the text-box
                 outline(4),
             ])
 
             // Text
             const txt = add([
-                text("", { size: 32, width: width() - 230, align: "center" }),
-                pos(textbox.pos),
-                anchor("center"),
+                text("", { size: 32, width: width() - 230, align: "center" }), //size of the text
+                pos(textbox.pos), //It is in the position of the text-box
+                anchor("center"), //In the center
                 color(0, 0, 0),
             ])
 
 
-            onKeyPress("space", () => {
-                // Cycle through the dialogs
-                curDialog++
-                if(curDialog < dialogs.length){
-                    updateDialog()
+            onKeyPress("space", () => { //Cycle throuhg dialogs if press space
+                curDialog++ //curDialog goes up by 1 and new dialog
+                if(curDialog < dialogs.length){ //If the curdialog is less than the length of the dialog array...
+                    updateDialog() //Add the dialog by one
                 }
-                else{
+                else{ //If not, go to game2 scene
                     go("game2")
                 }
             })
 
             // Update the on screen sprite & text
             function updateDialog() {
-
                 const [ char, dialog ] = dialogs[curDialog]
-
                 // Use a new sprite component to replace the old one
                 avatar.use(sprite(char))
                 // Update the dialog text
                 txt.text = dialog
-
             }
-
             updateDialog()
         })
 
 
-
-
-
-
-
-         scene("game2", () => {
-            const SPEED = 320
-            const level = addLevel([
-                // Design the level layout with symbols
-                "                   ",
-                "                   ",
-                "                   ",
-                "                   ",
-                "                   ",
-                "  @         =     -",
+        //Game2 Scene
+        scene("game2", () => {
+            const SPEED = 320 //Speed
+            const level = addLevel([//Levels of the game
+            "                   ",
+            "                   ",
+            "                   ",
+            "                   ",
+            "                   ",
+            "  @         =     -",//Used symbols
             ],
             {
              // The size of each grid
@@ -131,7 +120,7 @@
              tileHeight: 64,
              // The position of the top left block
              pos: vec2(64, 64),
-             // Define what each symbol means (in components)
+             // Define what each symbol means
              tiles: {
                  "@": () => [
                      sprite("pixel"),
@@ -160,10 +149,10 @@
                 },
             }),
 
-            player = level.get("player")[0]
+            player = level.get("player")[0] //Define player & key
             const Key = level.get("Key")[0]
 
-            onKeyDown("left", () => {
+            onKeyDown("left", () => { //Move arrows
                 player.move(-SPEED, 0)
             })
             onKeyDown("right", () => {
@@ -176,17 +165,17 @@
                 player.move(0, SPEED)
             })
 
-            Key.onCollide("door", () => {
+            Key.onCollide("door", () => { //If key collide with door, go to game3 scene
                 go("game3")
             })
         })
 
 
+        //game3 Scene
          scene("game3", () => {
             const SPEED = 320
-            setGravity(1600)
+            setGravity(1600) //Gravity so player can jump
             const level = addLevel([
-                // Design the level layout with symbols
                 "                   0         0          0",
                 "               =================================",
                 "            7         ",
@@ -203,7 +192,7 @@
              tileHeight: 64,
              // The position of the top left block
              pos: vec2(64, 64),
-             // Define what each symbol means (in components)
+             // Define what each symbol means
              tiles: {
                  "@": () => [
                      sprite("pixel"),
@@ -265,26 +254,25 @@
             })
 
 
-            player.onUpdate(() => {
+            player.onUpdate(() => { //Position of camera is on the player
                 camPos(player.pos)
 
-                if (player.pos.y >= 480) {
-			player.pos = level.tile2Pos(0, 0)
-		}
+                if (player.pos.y >= 480) { //If fal from the block, then the player goes back to square one
+                    player.pos = level.tile2Pos(0, 0)
+                }
 
-                player.onCollide("enemy", () => {
+                player.onCollide("enemy", () => { //Same thing. If collide with "enemy" sprite, then go back
                     player.pos = level.tile2Pos(0, 0)
                 })
 
-                player.onCollide("door", () => {
+                player.onCollide("door", () => { //If collide with the door, go to the finish scene
                     go("finish")
                 })
             })
         })
 
 
-
-
+        //Finish scene
         scene("finish", () =>{
             const dialogs = [
                 [ "Char", "Yay! We finished!" ],
@@ -334,7 +322,6 @@
 
 
             onKeyPress("space", () => {
-                // Cycle through the dialogs
                 curDialog++
                 if(curDialog < dialogs.length){
                     updateDialog()
@@ -344,40 +331,25 @@
                 }
             })
 
-            // Update the on screen sprite & text
             function updateDialog() {
 
                 const [ char, dialog ] = dialogs[curDialog]
-
                 // Use a new sprite component to replace the old one
                 avatar.use(sprite(char))
                 // Update the dialog text
                 txt.text = dialog
-
             }
-
             updateDialog()
         })
 
-
-
-        scene("start", () => {
-            add([
-                text("press space to start")
-            ])
-            onKeyPress("space", () => {
-                go("game")
-            })
-        })
+        //Finish 2 Scene
         scene("finish 2", () => {
-            add([
+            add([ //Add text
                 text("Yay, you finished Chapter 1! Refresh to start over. (TBC)")
             ])
         })
 
-
-
-        go("start")
+        go("start") //Start the game
         </script>
         <style>
             /* CSS */
