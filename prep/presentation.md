@@ -1,7 +1,8 @@
 # Presentation Plan
 
 ## Hook
-* Who creates characters? Who creates stories and their own universes. (Interactive hook) I turn my characters and their setting into life digitally.
+* Who creates characters? Who creates stories and their own universes? (THAT IS WHAT I'M ASKING THE AUDIENCE AND I KNOW THAT LIKE 10% OF THEM WOULD RAISE THEIR HAND) (Interactive hook) I turn my characters and their setting into life digitally.
+* I have 10 universes and I used one of them for this project
 
 ## Product
 * Include link for game
