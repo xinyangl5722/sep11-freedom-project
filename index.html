@@ -244,9 +244,6 @@
             onKeyDown("right", () => {
 	            player.move(SPEED, 0)
             })
-            onKeyDown("up", () => {
-	            player.move(0, -SPEED)
-            })
             onKeyPress("space", () => {
                 if (player.isGrounded()) {
                     player.jump()
