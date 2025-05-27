@@ -16,7 +16,7 @@
   * Use arrays for dialogue and levels
 * mvp= No dialogue text -> pushing a key -> Level with a character in a platform
 * Beyond mvp= Adding dialogue + Advancing the platform with an actual obstacle course + additional dialogue at the end
-  * Challenge= What to do when a player falls off the obstacle course. It just stayed there. I want to reset. So I looked back at Kaboom tutorials to figure it out
+  * Challenge= Images are like too big so adjust
 
 ## Conclusion
 * Takeaway= always plan each scene before learning a tool. What components and code do they need to function? What does each scene need? That way, you won't forget to learn these before you do the project.
