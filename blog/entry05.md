@@ -1,7 +1,7 @@
 # Entry 5
 ##### 4/24/2025
 
-## Creating the Minimal Viable Product (MVP)
+### Creating the Minimal Viable Product (MVP)
 So I did not really follow my [plan](https://github.com/xinyangl5722/sep11-freedom-project/blob/main/prep/plan.md)had a few hard times on making my mvp. I started off with creating a start scene and then adding a text for the scene. Then I decided to add another scene for a dialogue. I started to create another scene for the game. I had a hard time connecting these together. I later put them inside an if-statement that is in a function.
 ```js
 onKeyPress("space", () => {
