@@ -9,6 +9,10 @@ I later did my cafeteria exposition presentation a little bit later and I used [
 ### EDP
 I can finally say that I have finished with **communicating my results**. I have officially presented my at least eight minute long in-class presentation, and my at most two minute exposition presentation. I have been through a few experiences while presenting in both presentations such as planning and eye contact. I believe I am finished with my whole progress and now I'm looking forward to see other projects I have not seen yet to get future inspirations.
 
+### Skills
+One skill I have developed was **Consideration**. To elaborate, I know my game was supposed to be created for the intent of being used by the intended audience and any other people to use. During the exposition in the cafeteria, I allowed everyone that came up to my game to experiment and have fun with it.
+Another skill I have developed was **Communication**. Not only did I just learned my presentations, but I also allowed others to give questions as well. I was able to present my websites and give clear detail of my website.
+
 
 
 [Previous](entry05.md) | [Next](entry07.md)
