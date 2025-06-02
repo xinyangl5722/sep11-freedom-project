@@ -13,7 +13,8 @@ I can finally say that I have finished with **communicating my results**. I have
 One skill I have developed was **Consideration**. To elaborate, I know my game was supposed to be created for the intent of being used by the intended audience and any other people to use. During the exposition in the cafeteria, I allowed everyone that came up to my game to experiment and have fun with it.
 Another skill I have developed was **Communication**. Not only did I just learned my presentations, but I also allowed others to give questions as well. I was able to present my websites and give clear detail of my website.
 
-
+### Summary
+In conclusion, I am looking forward to looking at other projects during the upcoming SEP showcase where I can focus on the 12th grade projects and see what I can take from it. I am also looking forward to what 12th grade will lead me to.
 
 [Previous](entry05.md) | [Next](entry07.md)
 
